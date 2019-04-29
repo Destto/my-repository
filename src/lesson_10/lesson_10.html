@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="greet()">Click me!</button>
+    <button onclick="calc()">Open Call</button>
+    <button onclick="count()">Couner</button>
+    <button onclick="grab()">grab</button>
+    <script>
+        let totalsum = 0;
+        function count() {
+            let i;
+            do{
+                i = prompt('Enter number',0);
+                console.log(i);
+                if (isNaN(i)){
+                    break;
+                }else{
+                    totalsum += Number(i);
+                }
+            }
+            while (i !==null);
+            alert(totalsum);
+        }
+
+        function greet() {
+            let name = prompt('Enter your name:', '');
+            console.log(name);
+            if (name === 'admin') {
+                alert('Hello Admin');
+            } else {
+                alert('G-T-F-O');
+            }
+        }
+    
+        function grab(){   
+            let a = prompt("Enter number :", 0);
+            for (let n = 0; n < a ; n++){
+                console.log(n);
+            }
+        }
+
+        //Lesson 11
+        
+        
+    </script>
+</body>
+
+</html>

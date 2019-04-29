@@ -1,0 +1,105 @@
+.catalog{
+    position: relative;
+    height:1600px;
+    &__header{
+        width: 100%;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+
+    &__menu{
+        display: flex;
+        justify-content: flex-start;
+        height: 70px;
+    }
+
+    &__content{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+}
+
+
+
+.menu{
+    border-bottom: $menu-border-height solid #dfdfdf;
+    &__item{
+        display: flex;
+        justify-content: center;
+    }
+    &__btn{
+        background-color: transparent;
+        border: none;
+        font-size: 1rem;
+        color: #80818a;
+        padding: 0 10px;
+        position: relative;
+        &_active{
+            color: $font-active-colore;
+            &:after{
+                content: '';
+                width: 100%;
+                position: absolute;
+                bottom: -$menu-border-height;
+                left: 0;
+                background-color: $font-active-colore;
+                height: 1px;
+            }
+        }
+    }
+}
+
+.movie{
+    background-color: #ffffff;
+}
+
+.movie__description{
+    height: 60px;
+    border: 0.5px solid rgb(167, 164, 164);
+    &_name{
+        font-size: 20px;
+        color: #494c62;
+        position: absolute;
+        left: 15px;
+        bottom: 6%;
+    }
+    &_categories{
+        color: #babbc3;
+        position: absolute;
+        font-size: 15px;
+        left: 15px;
+        bottom: 2%;
+    }
+    &_Rectangle{
+        color: $borders-forms-colore;
+        border: 1px solid $borders-forms-colore;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 15px;
+        position: absolute;
+        right: 10px;
+        bottom: 3%;
+    }
+}
+
+.catalog__footer{
+    height: 50px;
+    position: absolute;
+    bottom: 5%;
+    right: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &_spinner{
+        color: $borders-forms-colore;
+        font-size: 25px;
+    }
+    &_loading{
+        color: #babbc3;
+    }
+
+}

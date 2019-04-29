@@ -1,0 +1,28 @@
+@import "./styles/grid.scss";
+@import "./styles/mixins.scss";
+@import "./styles/variales.scss";
+@import "./styles/base.scss";
+@import "./styles/feed.scss";
+@import "./styles/image.scss";
+
+.catalog__menu {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu {
+  border-bottom: $menu-border-height solid #dfdfdf;
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #80818a;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}

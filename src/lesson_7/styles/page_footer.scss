@@ -1,0 +1,25 @@
+.page_footer {
+  position: relative;
+  height: 150px;
+  background-color: #ffffff;
+  &_logo {
+    position: absolute;
+    left: 80px;
+    top: 40px;
+    font-size: 35px;
+    color: #494c62;
+  }
+}
+
+.page_footer_info {
+  position: absolute;
+  right: 5%;
+  top: 35px;
+  &_items {
+    display: flex;
+  }
+  &__item{
+    margin-left: 10px;
+    font-size: 20px;
+  }
+}
